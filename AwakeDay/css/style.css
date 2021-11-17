@@ -1,0 +1,268 @@
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: black;
+    line-height: 1;
+    margin: 0;
+}
+
+.topPart{
+    background-image: url(../pics/topPart.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topNav li{
+    list-style: none;
+    float:left;
+}
+
+ul.topNav li.rightTop{
+    float: right;
+}
+
+ul.topNav li.dropDownIcon{
+    display: none;
+}
+
+ul.topNav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    text-align:center;
+    margin: 10px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+ul.topNav li a:hover{
+    border-radius: 22px;
+    background-color: #fff;
+    color: #000000;
+}
+
+div.container{
+    width: 100%;
+    margin:auto;
+    padding-top: 4%;
+    padding-bottom:4%;
+}
+
+.row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear:both;
+    content: "";
+}
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.32%;}
+.col-5{width: 41.65%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+div.appIcon img{
+    display: block;
+    margin:auto;
+    border-radius: 50%;
+    box-shadow: -2px -2px 20px 2px rgba(255, 255, 255, 0.336),
+    2px 2px 17px 2px rgb(255, 255, 255)
+}
+
+h1.slogan{
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 56px;
+    margin:0;
+    line-height: 70px;
+}
+
+.col-3{
+    text-align: center;
+}
+
+div.inputBoxs{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="date"]{
+    font-size: 20px;
+    width: 200px;
+    min-width: 100px;
+    padding:4px;
+    border-radius: 7px;
+    margin: 20px;
+}
+
+
+button{
+    font-size: 20px;
+    font-weight:700;
+    color: #fff;
+    width: 200px;
+    min-width: 100px;
+    border-radius: 7px;
+    margin: auto;
+    padding:10px 15px;
+    display: block;
+    text-align: center;
+}
+
+button.createADay{
+    background-color: #0069ff;
+}
+
+button.createToday{
+    background-color: orange;
+}
+
+
+h2{
+    color: #fff;
+    text-align: center;
+}
+
+h5.cutline{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.rightside-col{
+    margin:auto;
+}
+
+div.box{
+    text-align: center;
+    margin: 24px;
+    padding:36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1 rgba(0,0,0,.15),
+    0 2 3 0 rgba(0,0,0,1);
+}
+
+div.Icon{
+    width:100%;
+}
+
+label{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+button.learnMore{
+    background-color: #0069ff;
+}
+
+footer.footsy{
+    background-color:#666;
+}
+
+footer.footsy h1{
+    color: #fff;
+    font-size: 20px;
+}
+
+footer.footsy ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+footer.footsy ul li{
+    color:#fff;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/**#### mobile setting ####**/
+@media Screen and (max-width: 680px){
+    ul.topNav li:not(:nth-child(1)){
+        display:none;
+    }
+
+    ul.topNav li.dropDownIcon{
+        display: block;
+        float: right;
+    }
+
+    ul.topNav.responsive li.dropDownIcon{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+
+    ul.topNav.responsive{
+        position:relative;
+    }
+
+    ul.topNav.responsive li{
+        display: inline;
+        float: none;
+    }
+
+    ul.topNav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+
+    .col-6,.col-3,.col-4{
+        width: 100%;
+        margin: 0%;
+    }
+
+    .rightside-col{
+        margin: 15%;
+    }
+
+    .videoContainer iframe{
+        position: relative;
+        width: 100%;
+        margin:0;
+        overflow: hidden;
+    }
+
+    div.box{
+        padding: 5px;
+    }
+}
