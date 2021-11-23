@@ -1,0 +1,40 @@
+<!--start with the boostrap starter templete on the website-->
+
+<!doctype html>
+<html lang="en"> 
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!--Since we have downloaded the file, this part should be replaced by the local src-->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Our styleing sheet will be loaded at last and be able to override the styles.-->
+  </head>
+  <body>
+      <!--bootstrap has two kinds of containers, container and container-fluid-->
+      <div class="container-fluid">
+          <div class="row">
+              <!--You should always build a col in row, you can also add inner rows and colunms in columns-->
+              <!--When the screen size becomes the small this become a 12 colunm-->
+              <div class="col-sm-6">col 1</div>
+              <div class="col-sm-6">col 2</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-lg-4">col 3</div>
+            <div class="col-sm-6 col-lg-4">col 4</div>
+            <div class="col-sm-12 col-lg-4">col 5</div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!--Again the cdn part is not needed because we have downloaded it.-->
+    <!--The mini file loads faster-->
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
