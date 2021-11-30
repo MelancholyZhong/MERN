@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap-grid.min.css" >
     <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css" >
+    <!-- Find the cdn for the awsome font on "W3 school Font Awsome intro an then you can use the icons" -->
+    <script src="https://kit.fontawesome.com/b20e7dafd9.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="main.css">
   </head>
@@ -92,12 +94,178 @@
         <div class="sectionDark">
             <div class="row">
                 <div class="col-sm-12 col-md-1 offset-md-2">
-                <!-- this col takes col of 1 and be off from side by 2-col -->
-
+                  <!-- this col takes col of 1 and be off from side by 2-col -->
+                  <img class="img-fluid" src="assets/skatebord.jpeg">
                 </div>
+                <div class="col-sm-12 col-md-6">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium vero dolor deleniti veniam perspiciatis fugit impedit totam dicta cum unde.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-9">
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, error fugit! Nisi non laboriosam deleniti omnis quam blanditiis impedit molestias sequi eius, ullam eveniet quia alias ipsa dolorem ad. Eveniet dicta aliquam, facere doloremque pariatur a est consequuntur ducimus aspernatur harum laborum quasi, id architecto, ex adipisci officiis quae. Sint.
+                      </p>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                      <img class="img-fluid" src="assets/flower.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="col"></div>
             </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="coolStuffWrapper">
+                  <button type="button" class="btn btn-lg coolStuffBtn" data-toggle="modal" data-target="#coolStuffModal">Get cool Stuff!</button>
+                  <!-- copy the data-toggle and data-target(triggers the id of the modal) part of the modal into button-->
+                  
+                </div>
+              </div>
+            </div>
+
         </div>
-        
+        <div class="sectionLight">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                  <img class="img-fluid imgCenter" src="assets/flower.jpg">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <button type="button" class="btn btn-danger btn-lg btnCenter" data-toggle="modal" data-target=".flower-modal-lg">Look flower</button>
+                      <!-- You can also use a class in the data-target -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <img class="img-fluid imgCenter" src="assets/panda.jpg">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <button type="button" class="btn btn-danger btn-lg btnCenter" data-toggle="modal" data-target=".panda-modal-md">Pet panda</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <img class="img-fluid imgCenter" src="assets/sky.jpg">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <button type="button" class="btn btn-danger btn-lg btnCenter" data-toggle="modal" data-target=".sky-modal-sm">Look sky</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer bg-dark">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12 col-lg-3">
+                <img class="img-fluid footerImg" src="assets/panda.jpg">
+              </div>
+              <div class="col-sm-12 col-lg-9 socialWrapper">
+                <a href="https://facebook.com" target="_blank">
+                  <i class="fab fa-facebook-square fa-3x"></i>
+                </a>
+                <!-- the command target="_blank" will open up a new page-->
+                <i class="fab fa-youtube fa-3x"></i>
+                <i class="fab fa-instagram fa-3x"></i>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Modal, usually put the modal part in the under of the container and relativelt seperate from other parts-->
+        <!-- Modal coolStuffModal -->
+        <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <img class="img-fluid" src="assets/panda.jpg">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="modalFormWrapper">
+                        <form>
+                          <div class="form-group">
+                            <label for="formName">What's your name?</label>
+                            <input type="text" class="form-control" id="formName" placeholder="Name">
+                          </div>
+                          <div class="form-group">
+                            <label for="formEmail">Where should we send your cool content?</label>
+                            <input type="email" class="form-control" id="formEmail" placeholder="Email">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optimal Modal, this kind of modal uses class-->
+        <!-- Modal of flower video. -->
+        <div class="modal fade flower-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <!-- This is a embeded video,which is responsive and is 16:9 -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mGZ1LbNn5rE" allowfullscreen></iframe>
+              </div>
+              <p>Please enjoy this flower video</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal of panda video. -->
+        <div class="modal fade panda-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-md">
+            <div class="modal-content">
+              <!-- This is a embeded video,which is responsive and is 16:9 -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z8z95RCcq1I" allowfullscreen></iframe>
+              </div>
+              <p>Please enjoy this panda video</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal of sky video. -->
+        <div class="modal fade sky-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <!-- This wrapper changes the size of the modal showed video -->
+            <div class="modal-content">
+              <!-- This is a embeded video,which is responsive and is 16:9 -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5VkHWyhS7A4" allowfullscreen></iframe>
+              </div>
+              <p>Please enjoy this sky video</p>
+            </div>
+          </div>
+        </div>
+      
     
     </div>
     <!-- Optional JavaScript -->

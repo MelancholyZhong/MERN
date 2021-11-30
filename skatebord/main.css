@@ -5,5 +5,74 @@
 
 .sectionLight{
     background-color: #eceeef;
-    padding: 2px;
+    padding: 2rem;
+}
+
+.sectionDark{
+    background-color: #cccccc;
+    padding: 2rem;
+}
+
+.coolStuffWrapper{
+    margin-top: 20px;
+}
+
+button.coolStuffBtn{
+    background-color: red;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+}
+
+h5.modal-title{
+    margin:auto;
+}
+
+.modal-header .close {
+    padding: 1rem;
+    margin: -1rem -1rem -1rem -1rem;
+}
+
+.modalFormWrapper{
+    padding: 2rem;
+}
+
+img.imgCenter{
+    display: block;
+    margin: auto;
+}
+
+.btnCenter{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* Makes the button the same size with the full size pic */
+}
+
+img.footerImg{
+    padding: 10px;
+    width: 80%;
+}
+
+.fab{
+    margin: 10px;
+
+}
+
+.fa-facebook-square{
+    color: #3b5998;
+}
+
+.fa-youtube{
+    color: #c32f10;
+}
+
+.fa-instagram{
+    color: #ffffff;
+}
+
+.socialWrapper{
+    margin: auto;
 }
